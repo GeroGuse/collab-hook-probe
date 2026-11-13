@@ -1,0 +1,14 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo HOOK-PROBE-FIRED $(date -Is) >> /tmp/hook-probe.log; echo HOOK-PROBE-FIRED"
+          }
+        ]
+      }
+    ]
+  }
+}
